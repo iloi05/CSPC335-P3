@@ -1,0 +1,26 @@
+def cheapest_route_with_k_stops(n, flights, src, dst, k):
+    # n = number of nodes
+    # flights = list of (u, v, cost)
+
+    # Step 1: initialize cost array
+    cost = [float('inf')] * n
+    cost[src] = 0
+
+    # Step 2: relax edges up to k + 1 times
+    for i in range(k + 1):
+        temp = cost.copy()
+
+        for u, v, price in flights:
+            if cost[u] == float('inf'):
+                continue
+
+            if cost[u] + price < temp[v]:
+                temp[v] = cost[u] + price
+
+        cost = temp
+
+    # Step 3: check result
+    if cost[dst] == float('inf'):
+        return -1
+    else:
+        return cost[dst]
