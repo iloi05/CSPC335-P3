@@ -2,8 +2,8 @@
 Names: Ivy Loi, Homan Qiu, Richie Nguyen, Robert Gutierrez
 Emails: ioloi05@csu.fullerton.edu, hqiu2006@csu.fullerton.edu, richienguyen@csu.fullerton.edu, lil.rjg3@csu.fullerton.edu
 CPSC 335 section 11
-Project 3: Algorithm 1
-Date: 4/24/2026
+Project 3: Algorithm 2
+Date: 4/25/2026
 */
 
 #include <iostream>
